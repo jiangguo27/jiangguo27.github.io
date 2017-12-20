@@ -17,9 +17,18 @@ title: JiangGuo's blog
 email: jiangguo27@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jiangguo27.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:title/
 # twitter_username: jekyllrb
-github_username:  jiangguo27
+#github_username:  jiangguo27
+blog_button:
+    title: Blog
+    description: Visit blog
+cover_color: blue
+
+social:
+    github: jiangguo27
+    mail: jiangguo27@icloud.com
 
 # Build settings
 markdown: kramdown
