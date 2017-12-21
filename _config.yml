@@ -26,6 +26,15 @@ blog_button:
     description: Visit blog
 cover_color: blue
 
+#nav:
+#    - {title: Project, description: My project, url: '#'}
+
+plugins:
+    - jekyll-paginate
+#gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
 social:
     github: jiangguo27
     mail: jiangguo27@icloud.com
