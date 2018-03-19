@@ -4,7 +4,7 @@ title: 移动App GUI层架构设计
 categories: app
 ---
 
-![AppArchitecture](img/AppArchitecture.png)
+![AppArchitecture](./img/AppArchitecture.png)
 
 
 ### 参考资料
