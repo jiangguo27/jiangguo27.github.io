@@ -1,15 +1,23 @@
 @startuml
-object Object01
-object Object02
-object Object03
-object Object04
-object Object05
-object Object06
-object Object07
-object Object08
 
-Object01 <|-- Object02
-Object03 *-- Object04
-Object05 o-- "4" Object06
-Object07 .. Object08 : some labels
+' interface TasksContract
+interface Presenter
+interface View
+
+class TasksPresenter
+class TasksFragment
+class Acvitity
+
+' TasksContract *-- Presenter
+' TasksContract *-- View
+
+Acvitity *-- TasksPresenter
+Acvitity *-- TasksFragment
+
+Presenter *-- View
+View *-- Presenter
+
+Presenter <|-- TasksPresenter
+View <|-- TasksFragment
+
 @enduml
