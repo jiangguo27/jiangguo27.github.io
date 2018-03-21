@@ -1,4 +1,4 @@
-@startuml
+@startuml MVP
 
 class TasksAcvitity {
     - TasksPresenter mTasksPresenter;
@@ -55,12 +55,11 @@ interface BasePresenter {
 TasksPresenter *-- TasksAcvitity : contains
 TasksFragment *-- TasksAcvitity : contains
 
-'Presenter *-- BaseView : contains
 View *-- TasksPresenter : contains
 Presenter *-- TasksFragment : contains
 
-Presenter <|-- TasksPresenter: extension
-View <|-- TasksFragment: extension
+Presenter <|.. TasksPresenter: implement
+View <|.. TasksFragment: implement
 
 BaseView <|-- View: extends<Presenter>
 BasePresenter <|-- Presenter: extension
