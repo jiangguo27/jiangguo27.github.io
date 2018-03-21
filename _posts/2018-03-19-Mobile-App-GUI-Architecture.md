@@ -15,7 +15,7 @@ categories: app
 
 ![App Architecture](/assets/images/2018/AppArchitecture.png)
 
-![MVP](/assets/images/2018/mvp.png)
+![MVP](/assets/images/2018/mvp.svg)
 
 ![Test PUML](http://www.plantuml.com/plantuml/svg/JOqn3i8m34LtJW4NYA4BYAbNCQsL6YLEPN-BwmCI0zDxmvFU7617zdOugIqjLqblnmtOuqxa_2fLiUKZGtmP1Z6KPNHwAbkjEQRhd_xQeeCw1yI98mH1shbAq7I-t0WIAFltE8kj7xu1)
 
