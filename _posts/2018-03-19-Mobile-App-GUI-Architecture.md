@@ -6,8 +6,8 @@ categories: app
 
 <!-- TOC -->
 
-- [架构分类](#架构分类)
-- [参考资料](#参考资料)
+- [架构分类](#%E6%9E%B6%E6%9E%84%E5%88%86%E7%B1%BB)
+- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
 
@@ -17,7 +17,7 @@ categories: app
 
 ![MVP](/assets/images/2018/mvp.svg)
 
-![Test PUML](http://www.plantuml.com/plantuml/svg/JOqn3i8m34LtJW4NYA4BYAbNCQsL6YLEPN-BwmCI0zDxmvFU7617zdOugIqjLqblnmtOuqxa_2fLiUKZGtmP1Z6KPNHwAbkjEQRhd_xQeeCw1yI98mH1shbAq7I-t0WIAFltE8kj7xu1)
+![Test PUML](http://www.plantuml.com/plantuml/png/JOqxhW8n303xTmguG0pRWAZsAYPhPOrY9_87hWz85A-QAKQQrGCjKlhVaRNst2Yj7_Q8wJS0mrTf77lUqydgq22DKeV0Wr5Rox5S_kclBJn0q8CCq9t2WGKREIodynNaESly3bVIxSCt)
 
 # 参考资料
 
