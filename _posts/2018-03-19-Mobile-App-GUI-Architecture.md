@@ -7,6 +7,7 @@ categories: app
 <!-- TOC -->
 
 - [架构分类](#%E6%9E%B6%E6%9E%84%E5%88%86%E7%B1%BB)
+    - [MVP](#mvp)
 - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
@@ -14,6 +15,15 @@ categories: app
 # 架构分类
 
 ![App Architecture](/assets/images/2018/AppArchitecture.png)
+
+[点击查看大图](https://jiangguo27.github.io/assets/images/2018/AppArchitecture.png)
+
+
+## MVP
+
+![MVP](https://upload.wikimedia.org/wikipedia/commons/d/dc/Model_View_Presenter_GUI_Design_Pattern.png)
+
+学习MVP可以看这个[例子](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)，提供了一个基本的MVP架构，我画了一下GUI层的类图，方便理解：
 
 ![MVP](/assets/images/2018/mvp.svg)
 
@@ -29,7 +39,7 @@ categories: app
 
 [猿题库 iOS 客户端架构设计](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=444322139&idx=1&sn=c7bef4d439f46ee539aa76d612023d43&scene=0#wechat_redirect)
 
-[Android Architecture Blueprints](https://github.com/jiangguo27/android-architecture)
+[Android Architecture Blueprints](https://github.com/googlesamples/android-architecture)
 
 [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
 
