@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS RunLoop
-categories: app
+categories: iOS
 ---
 
 ### 参考资料
