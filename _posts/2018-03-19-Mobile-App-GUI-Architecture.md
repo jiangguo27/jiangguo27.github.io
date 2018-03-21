@@ -17,7 +17,9 @@ categories: app
 
 ![MVP](/assets/images/2018/mvp.svg)
 
+<!--
 ![Test PUML](http://www.plantuml.com/plantuml/png/JOqxhW8n303xTmguG0pRWAZsAYPhPOrY9_87hWz85A-QAKQQrGCjKlhVaRNst2Yj7_Q8wJS0mrTf77lUqydgq22DKeV0Wr5Rox5S_kclBJn0q8CCq9t2WGKREIodynNaESly3bVIxSCt)
+-->
 
 # 参考资料
 
