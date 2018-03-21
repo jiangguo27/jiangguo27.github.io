@@ -14,9 +14,9 @@ categories: app
 
 # 架构分类
 
-![App Architecture](/assets/images/2018/AppArchitecture.png)
+![App Architecture](/assets/images/2018/AppArchitecture.svg)
 
-[点击查看大图](https://jiangguo27.github.io/assets/images/2018/AppArchitecture.png)
+[点击查看大图](https://jiangguo27.github.io/assets/images/2018/AppArchitecture.svg)
 
 
 ## MVP
