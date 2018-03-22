@@ -2,3 +2,4 @@ _site
 .DS_Store
 yulib.*
 .sass-cache/
+_drafts/

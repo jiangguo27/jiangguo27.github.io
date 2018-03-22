@@ -15,8 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: jiangguo27's blog
 #email: 
-#description: >- # this means to ignore newlines until "baseurl:"
-#    (^_^)
+description: >- # this means to ignore newlines until "baseurl:"
+  这些算是是自己平时思考后总结的东西吧，把那些零散的东西归纳一下，
+  带上一点不多的想法或观点，也许有误，也许浅显，也是一个构建自己的知识结构的过程。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb

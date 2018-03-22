@@ -6,18 +6,24 @@ categories: app
 
 <!-- TOC -->
 
-- [架构分类](#%E6%9E%B6%E6%9E%84%E5%88%86%E7%B1%BB)
+- [GUI层架构分类](#gui%E5%B1%82%E6%9E%B6%E6%9E%84%E5%88%86%E7%B1%BB)
+    - [MVC](#mvc)
     - [MVP](#mvp)
+- [模块化](#%E6%A8%A1%E5%9D%97%E5%8C%96)
 - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
 
-# 架构分类
+# GUI层架构分类
 
 ![App Architecture](/assets/images/2018/AppArchitecture.svg)
-
 [点击查看大图](https://jiangguo27.github.io/assets/images/2018/AppArchitecture.svg)
 
+## MVC
+
+刚开始写Android App时，习惯将很多的东西放到Activity里边，有GUI操作逻辑，有业务逻辑，
+这样Activity即充当了Controller，又当了View，耦合比较重；
+在写iOS App时，iOS内建的MVC架构，也面临同样的境地，一开始都习惯把很多的东西放到ViewController中去。
 
 ## MVP
 
@@ -30,6 +36,12 @@ categories: app
 <!--
 ![Test PUML](http://www.plantuml.com/plantuml/png/JOqxhW8n303xTmguG0pRWAZsAYPhPOrY9_87hWz85A-QAKQQrGCjKlhVaRNst2Yj7_Q8wJS0mrTf77lUqydgq22DKeV0Wr5Rox5S_kclBJn0q8CCq9t2WGKREIodynNaESly3bVIxSCt)
 -->
+
+# 模块化
+
+这里讨论的不是Android的插件化，也不是iOS的动态化，只是将工程拆分成不同模块来降低维护难度。
+Android中实现模块化可以利用Android Library或者Java Library来实现, 将业务能用的东西抽象到一个Jar包中供上层模块使用；
+Android Library则可以加上一些资源文件，简单配置就可以成为一个独立的app来跑。Android中可以将Android Library部属到Maven上去，利用gradle来做依赖管理，或者直接在本地使用。iOS则可以将模块做成Cocoa Touch Framework，利用CocoaPods或者Carthage来做依赖管理。
 
 # 参考资料
 
