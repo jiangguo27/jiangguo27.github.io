@@ -3,3 +3,4 @@ _site
 yulib.*
 .sass-cache/
 _drafts/
+node_modules/
