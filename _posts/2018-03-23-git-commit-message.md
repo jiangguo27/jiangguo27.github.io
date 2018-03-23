@@ -8,12 +8,14 @@ categories: git
 
 - [常规提交规范](#%E5%B8%B8%E8%A7%84%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83)
 - [工具](#%E5%B7%A5%E5%85%B7)
-- [安装](#%08%08%E5%AE%89%E8%A3%85)
+- [安装](#%E5%AE%89%E8%A3%85)
 - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
 
 # 常规提交规范
+
+[Angular convention](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
 
 [Conventional Commits](https://conventionalcommits.org)
 
