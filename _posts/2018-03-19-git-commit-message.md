@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 规范Git Commit Message格式
+title: 规范 Git Commit Message 格式
 categories: git
 ---
 
