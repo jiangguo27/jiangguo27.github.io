@@ -36,7 +36,7 @@ commitizen会按照adapter的定义来给出提示，让开发者完成填空；
 
 commitlint检查commit message是否符合规范, husky则可以勾住git，让git commit这样的动作强制去跑commitlint，避免自己有时偷懒。
 
-[standard-version]()
+[standard-version](https://github.com/conventional-changelog/standard-version)
 
 可以根据commit message来生成change log。
 
@@ -152,7 +152,7 @@ npm i
 按照以前:
 
 ``` shell
-git commit -m "fix xxx bug"
+git commit -m "test commit"
 ```
 
 这个时候husky检查到不符合规范，就会直接报错了：
@@ -192,6 +192,7 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 查看log:
 
 ``` shell
+$ git lg
 * 681ff76 - (HEAD -> master, tag: v1.1.0) chore(release): 1.1.0 (11 seconds ago) <jinagguo27>
 * 25ae5d8 - (origin/master, origin/HEAD) chore: update theme (2 hours ago) <jinagguo27>
 * 0e90fce - chore: update theme (3 hours ago) <jinagguo27>
@@ -214,6 +215,8 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 ``` shell
 npm run release
 ```
+
+更多的参数请查看[文档](https://github.com/conventional-changelog/standard-version)
 
 # 参考资料
 
