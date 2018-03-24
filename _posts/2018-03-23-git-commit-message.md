@@ -9,6 +9,10 @@ categories: git
 - [常规提交规范](#%E5%B8%B8%E8%A7%84%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83)
 - [工具](#%E5%B7%A5%E5%85%B7)
 - [安装](#%E5%AE%89%E8%A3%85)
+- [验证](#%E9%AA%8C%E8%AF%81)
+- [1.1.0 (2018-03-23)](#110-2018-03-23)
+    - [Bug Fixes](#bug-fixes)
+    - [Features](#features)
 - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
@@ -146,8 +150,91 @@ npm i
 
 安装后，协助大家按照相同的规范来提交代码。
 
+# 验证
+
+按照以前:
+
+``` shell
+git commit -m "fix xxx bug"
+```
+
+这个时候husky检查到不符合规范，就会直接报错了：
+
+``` shell
+$ git commit -m "test commit"
+husky > npm run -s commitmsg (node v6.11.2)
+
+⧗   input: test commit
+✖   message may not be empty [subject-empty]
+✖   type may not be empty [type-empty]
+✖   found 2 problems, 0 warnings
+
+husky > commit-msg hook failed (add --no-verify to bypass)
+```
+
+你可以按照规范手动加上type后再commit，不过还是建议直接用上commitizen:
+
+``` shell
+$ git cz
+cz-cli@2.9.6, cz-conventional-changelog@1.2.0
+
+
+Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
+
+? Select the type of change that you're committing: (Use arrow keys)
+❯ feat:     A new feature
+  fix:      A bug fix
+  docs:     Documentation only changes
+  style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+  refactor: A code change that neither fixes a bug nor adds a feature
+  perf:     A code change that improves performance
+  test:     Adding missing tests or correcting existing tests
+(Move up and down to reveal more choices)
+```
+
+查看log:
+
+``` shell
+* 681ff76 - (HEAD -> master, tag: v1.1.0) chore(release): 1.1.0 (11 seconds ago) <jinagguo27>
+* 25ae5d8 - (origin/master, origin/HEAD) chore: update theme (2 hours ago) <jinagguo27>
+* 0e90fce - chore: update theme (3 hours ago) <jinagguo27>
+* 83e1774 - fix: add missing files (4 hours ago) <jinagguo27>
+* ad2464d - feat(theme): customize jekyll theme (15 hours ago) <jinagguo27>
+* e941079 - chore: update content (17 hours ago) <jinagguo27>
+* 3eb916a - chore: change files name (20 hours ago) <jinagguo27>
+* 4a4bf23 - chore: update article title (21 hours ago) <jinagguo27>
+* 2ba863d - chore: modify article title (21 hours ago) <jinagguo27>
+* 25799bb - chore: remove garbled charactors (22 hours ago) <jinagguo27>
+* b2680d7 - chore: update content (22 hours ago) <jinagguo27>
+* f0c0d7b - chore: support commitizen (24 hours ago) <jinagguo27>
+* 55e15cf - docs(app): update (2 days ago) <jinagguo27>
+* b44d9d2 - docs(default): remove default post (3 days ago) <jinagguo27>
+* 9512688 - fix(puml): fix one error of UML diagram (3 days ago) <jinagguo27>
+```
+
+根据 commit message 生成 change log:
+
+``` shell
+npm run release
+```
+
+生成的 CHANGELOG.md :
+
+<a name="1.1.0"></a>
+# 1.1.0 (2018-03-23)
+
+### Bug Fixes
+
+* **app:** fix error image url ([caa4682](https://github.com/jiangguo27/jiangguo27.github.io/commit/caa4682))
+* **app:** fix wrong image url ([be9e3b0](https://github.com/jiangguo27/jiangguo27.github.io/commit/be9e3b0))
+* **puml:** fix one error of UML diagram ([9512688](https://github.com/jiangguo27/jiangguo27.github.io/commit/9512688))
+* add missing files ([83e1774](https://github.com/jiangguo27/jiangguo27.github.io/commit/83e1774))
+
+
+### Features
+
+* **theme:** customize jekyll theme ([ad2464d](https://github.com/jiangguo27/jiangguo27.github.io/commit/ad2464d))
+
 # 参考资料
 
 [优雅的提交你的 Git Commit Message](https://zhuanlan.zhihu.com/p/34223150)
-
-
