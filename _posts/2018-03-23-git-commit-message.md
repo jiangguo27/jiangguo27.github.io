@@ -10,9 +10,6 @@ categories: git
 - [工具](#%E5%B7%A5%E5%85%B7)
 - [安装](#%E5%AE%89%E8%A3%85)
 - [验证](#%E9%AA%8C%E8%AF%81)
-- [1.1.0 (2018-03-23)](#110-2018-03-23)
-    - [Bug Fixes](#bug-fixes)
-    - [Features](#features)
 - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
 
 <!-- /TOC -->
@@ -217,23 +214,6 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 ``` shell
 npm run release
 ```
-
-生成的 CHANGELOG.md :
-
-<a name="1.1.0"></a>
-# 1.1.0 (2018-03-23)
-
-### Bug Fixes
-
-* **app:** fix error image url ([caa4682](https://github.com/jiangguo27/jiangguo27.github.io/commit/caa4682))
-* **app:** fix wrong image url ([be9e3b0](https://github.com/jiangguo27/jiangguo27.github.io/commit/be9e3b0))
-* **puml:** fix one error of UML diagram ([9512688](https://github.com/jiangguo27/jiangguo27.github.io/commit/9512688))
-* add missing files ([83e1774](https://github.com/jiangguo27/jiangguo27.github.io/commit/83e1774))
-
-
-### Features
-
-* **theme:** customize jekyll theme ([ad2464d](https://github.com/jiangguo27/jiangguo27.github.io/commit/ad2464d))
 
 # 参考资料
 
