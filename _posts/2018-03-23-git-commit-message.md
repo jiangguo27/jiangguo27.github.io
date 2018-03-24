@@ -74,7 +74,7 @@ npm i -D @commitlint/config-cli @commitlint/config-conventional
 echo "module.exports = {extends: ['@commitlint/config-conventional']};" > commitlint.config.js
 ```
 
-完成后需要手动到package.json时去配置一下：
+完成后需要手动到package.json里去配置一下：
 
 ``` json
 {
