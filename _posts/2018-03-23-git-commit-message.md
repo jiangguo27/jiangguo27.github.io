@@ -149,13 +149,13 @@ npm i
 
 # 验证
 
-按照以前:
+按照以前:
 
 ``` shell
 git commit -m "test commit"
 ```
 
-这个时候husky检查到不符合规范，就会直接报错了：
+这个时候husky检查到不符合规范，就会直接报错了：
 
 ``` shell
 $ git commit -m "test commit"
@@ -169,7 +169,7 @@ husky > npm run -s commitmsg (node v6.11.2)
 husky > commit-msg hook failed (add --no-verify to bypass)
 ```
 
-你可以按照规范手动加上type后再commit，不过还是建议直接用上commitizen:
+你可以按照规范手动加上type后再commit，不过还是建议直接用上commitizen:
 
 ``` shell
 $ git cz
