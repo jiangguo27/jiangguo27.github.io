@@ -39,12 +39,16 @@ categories: app
 
 # 模块化
 
-这里讨论的不是Android的插件化，也不是iOS的动态化，只是将工程拆分成不同模块来降低维护难度。
+这里讨论的不是Android的插件化或者动态化，只是将工程拆分成不同模块来降低维护难度的组件化。
 
 Android中实现模块化可以利用Android Library或者Java Library来实现, 将业务能用的东西抽象到一个Jar包中供上层模块使用；
 Android Library则可以加上一些资源文件，简单配置就可以成为一个独立的app来跑。
 
 iOS则可以利用Cocoa Touch Framework或者Cocoa Touch Static Library来实现模块物理上的拆分。
+
+Android利用gradle做依赖管理，iOS利用CocoaPods或者Carthage来做依赖管理。
+
+上面这些是我从表面看到的东西，更深入本质的知识和工程实践可以学习[这里](https://github.com/mqzhangw/AndroidComponent)。
 
 # 参考资料
 
