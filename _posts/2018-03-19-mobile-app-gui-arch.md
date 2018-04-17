@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 移动 App GUI 层架构设计
-categories: app
+categories: App
 ---
 
 <!-- TOC -->

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 规范 Git Commit Message 格式
-categories: git
+categories: Git
 ---
 
 <!-- TOC -->
