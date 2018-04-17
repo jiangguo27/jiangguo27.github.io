@@ -13,13 +13,13 @@ tags: []
 
 - [反射](#%E5%8F%8D%E5%B0%84)
 - [注解](#%E6%B3%A8%E8%A7%A3)
-    - [内建注解](#%08%E5%86%85%E5%BB%BA%E6%B3%A8%E8%A7%A3)
+    - [内建注解](#%08%E5%86%85%E5%BB%BA%E6%B3%A8%E8%A7%A3)
         - [3个标准注解](#3%E4%B8%AA%E6%A0%87%E5%87%86%E6%B3%A8%E8%A7%A3)
         - [4个元注解](#4%E4%B8%AA%E5%85%83%E6%B3%A8%E8%A7%A3)
     - [自定义注解](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3)
         - [定义](#%E5%AE%9A%E4%B9%89)
         - [元素](#%E5%85%83%E7%B4%A0)
-    - [自定义注解处理器](#%08%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E5%A4%84%E7%90%86%E5%99%A8)
+    - [自定义注解处理器](#%08%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E5%A4%84%E7%90%86%E5%99%A8)
         - [编译时注解](#%E7%BC%96%E8%AF%91%E6%97%B6%E6%B3%A8%E8%A7%A3)
         - [运行时注解](#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%B3%A8%E8%A7%A3)
 - [依赖注入](#%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5)
@@ -31,7 +31,7 @@ tags: []
 
 # 反射
 
-用于运行时修改程序的内容。
+用于运行时修改程序的内容。
 
 [Java Reflection API Spec](https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/package-summary.html):
 
@@ -52,15 +52,15 @@ java.lang.reflect
 
 缺点：
 
-- 性能：使用反射的代码运行性能较低
+- 性能：使用反射的代码运行性能较低
 - 安全限制：需要运行时权限
-- 暴露内部数据：如一些private的成员也可以通过反射访问到
+- 暴露内部数据：如一些private的成员也可以通过反射访问到
 
 # 注解
 
 Annotaion, 也叫metadata，从Java5开始引入。
 
-## 内建注解
+## 内建注解
 
 ### 3个标准注解
 
@@ -96,11 +96,11 @@ public @interface MyAnnotation {
 
 ### 定义
 
-用 @interface 定义，并配合元注解来声明此注解的用途。
+用 @interface 定义，并配合元注解来声明此注解的用途。
 
 ### 元素
 
-元素支持的类型
+元素支持的类型
 
 - All primitives: int, float, boolean ...
 - String
@@ -109,7 +109,7 @@ public @interface MyAnnotation {
 - Annotations
 - Arrays of any of the above
 
-e.g. 以上MyAnnotation注解在使用时传入一个String类型的值:
+e.g. 以上MyAnnotation注解在使用时传入一个String类型的值:
 
 ```Java
 public class Test {
@@ -118,7 +118,7 @@ public class Test {
 }
 ```
 
-## 自定义注解处理器
+## 自定义注解处理器
 
 ### 编译时注解
 
@@ -130,7 +130,7 @@ public class Test {
 
 ### 运行时注解
 
-基于Java反射API的扩展，在运行时动态的处理。
+基于Java反射API的扩展，在运行时动态的处理。
 
 应用:
 
@@ -142,7 +142,7 @@ DI -- Dependency Injection.
 
 我的理解就是为了将『变化』隔离出去。
 
-比如在构造对象的时候将该对象依赖的对象传进来，但这样一来，它依赖的对象又由谁来创建呢，以前写OOP代码时，知道隔离变化这样一条规则，所以会封装一层来管理依赖的对象现在可以注解来实现。
+比如在构造对象的时候将该对象依赖的对象传进来，但这样一来，它依赖的对象又由谁来创建呢，以前写OOP代码时，知道隔离变化这样一条规则，所以会封装一层来管理依赖的对象现在可以注解来实现。
 
 # 控制反转
 
